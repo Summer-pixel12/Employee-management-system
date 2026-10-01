@@ -1,0 +1,139 @@
+.header h1{
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.header span{
+    font-size: 35px;
+}
+.header{
+    background-color: #1c1c1c;
+    padding-left: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logOut{
+    background-color: rgba(255, 0, 0, 0.683);
+    color: white;
+    width: 120px;
+    height: 30px;
+    margin-right: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logOut:active{
+    scale: .95;
+    background-color: rgba(255, 0, 0, 0.383)
+}
+.taskinfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1c1c1c;
+}
+.taskinfo div{
+    width: 22%;
+    height: 90%;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+}
+.taskinfo div h2{
+    padding-bottom: 5px;
+}
+.taskList{
+    display: flex;
+    padding-top: 20px;
+    overflow-x: auto;
+}
+
+.mainCard{
+    width: 300px;
+    height: 90%;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top{
+display: flex;
+padding-top: 20px;
+padding-left: 15px;
+padding-right: 15px;
+align-items: center;
+justify-content: space-between;
+}
+.top div{
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+}
+.mid button{
+    width: 50%;
+    margin-left: 25%;
+    padding: 5px;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.title{
+    padding-left:15px;
+    padding-right:15px;
+    font-size: 25px;
+}
+.desc{
+    margin-left:22px;
+    margin-right:22px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+.bottom{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 18px;
+    padding-bottom: 3px;
+    text-align: center;
+    border-top: solid 1px black;
+}
+.acceptedCard{
+    background-color: rgb(216,190,70);
+}
+.failedCard{
+    background-color: rgb(255,174,174);
+}
+.completedCard{
+    background-color: rgb(57,202,132);
+}
+.newCard{
+    background-color: rgb(183, 183, 253);
+}
+
+
+.taskList::-webkit-scrollbar{
+    display: none;
+}
+ @media (max-width:900px){
+    .taskinfo div{
+        font-size: 17px;
+        line-height: 25px;
+        padding-left: 10px;
+    }
+ }
